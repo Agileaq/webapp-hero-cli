@@ -1,7 +1,7 @@
 import { Entry } from 'hero-cli/decorator';
 
 @Entry({
-  filename: 'dashboard/home.html'
+  path: '/dashboard/home.html'
 })
 export class DecoratePage {
 
