@@ -1,7 +1,10 @@
 import { Entry } from 'hero-cli/decorator';
 
 @Entry({
-  path: '/dashboard/home.html'
+  // path is optional
+  path: '/dashboard/home.html',
+  // template is optional
+  template: './template.html'
 })
 export class DecoratePage {
 
