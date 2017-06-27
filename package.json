@@ -1,0 +1,22 @@
+{
+  "name": "hero-template",
+  "version": "0.0.1",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "hero-cli": "github:hero-mobile/hero-cli",
+    "promise": "^7.1.1",
+    "qs": "^6.4.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.15.2",
+    "chalk": "^1.1.3",
+    "express": "^4.14.0",
+    "mockjs": "^1.0.1-beta3",
+    "multer": "^1.2.1"
+  },
+  "scripts": {
+    "start": "node mock & hero start -e dev -p 3000 -c webpack.config.dev.js",
+    "build": "hero build -e prod -m -f -c webpack.config.prod.js",
+    "serve": "hero serve"
+  }
+}

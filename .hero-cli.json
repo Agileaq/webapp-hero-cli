@@ -1,0 +1,10 @@
+{
+  "proxy": {
+    "/api/v2": "http://localhost:3006"
+  },
+  "environments": {
+    "dev": "./environments/environment-dev.js",
+    "prod": "./environments/environment-prod.js"
+  },
+  "homepage": "/"
+}
