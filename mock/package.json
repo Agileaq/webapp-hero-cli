@@ -2,7 +2,7 @@
   "name": "mock-server",
   "version": "0.1.0",
   "mockConfig": {
-    "port": 3006,
+    "port": 3005,
     "prefix": "/api/v2"
   },
   "devDependencies": {

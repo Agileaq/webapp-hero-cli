@@ -20,16 +20,16 @@ function getFileList(root) {
     return res;
 }
 
-function init(express, app) {
+function init(express, app, upload) {
 
-    var rootPath = (pkg.mockConfig && pkg.mockConfig.prefix) ? pkg.mockConfig.prefix : '';
+    var rootPath = (pkg.mockConfig && pkg.mockConfig.prefix)?pkg.mockConfig.prefix:'';
 
     getFileList(path.join(__dirname, 'modules'))
         .map(url => require(url))
         .forEach(mod => {
             app.use(
                 rootPath + mod.root,
-                mod.router(express)
+                mod.router(express, upload)
             );
         });
 
